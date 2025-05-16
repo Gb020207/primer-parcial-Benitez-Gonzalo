@@ -1,13 +1,15 @@
+<!-- Nos da una introduccion a la programación web,Lo que enceñara la guia,y como utilizar dicha guia -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Guía del Estudiante - Inicio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/css/index.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="assets/css/index.css" rel="stylesheet"/>
 </head>
 <body class="d-flex flex-column min-vh-100">
+  <!-- Barra de navegacion que funciona para navegar entre temario evaluacion e inicio -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
       <a class="navbar-brand" href="#">Guía Web</a>
@@ -15,25 +17,26 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
+        <ul class="navbar-nav ms-auto" class="nav-link " :hover>
         
-        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link" href="temario.html">Temario</a></li>
-        <li class="nav-item"><a class="nav-link" href="evaluacion.html">Evaluación</a></li>
-      </ul>
+          <li class="nav-item bg-dark"><a class="nav-link active" :hover  href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" :hover href="temario.html">Temario</a></li>
+          <li class="nav-item"><a class="nav-link" :hover href="evaluacion.html">Evaluación</a></li>
+        </ul>
       </div>
     
     </div>
   </nav>
+  <!-- Este main nos muestra conceptos basico que hay que saber para aprender de programacion web -->
   <main class="container my-5">
     <article class="bg-white shadow rounded p-4">
       <section class="mb-5">
-        <h2>¿Qué es la Programación Web?</h2>
+        <h2 class="text-dark">¿Qué es la Programación Web?</h2>
         <p>La programación web es el conjunto de técnicas y tecnologías que permiten crear sitios y aplicaciones que funcionan en navegadores. Incluye el diseño visual, la estructura del contenido, la interacción con el usuario y la conexión con servidores.</p>
       </section>
 
       <section class="mb-5">
-        <h3>¿Qué aprenderás en esta guía?</h3>
+        <h3 class="text-dark">¿Qué aprenderás en esta guía?</h3>
         <div class="row text-center">
           <div class="col-md-3 mb-4">
             <div class="card h-100">
@@ -94,7 +97,7 @@
       <p class="lead">Aprendé HTML, CSS, JavaScript y Bootstrap desde cero</p>
     </div>
   </header>
-
+<!-- El footer con los derechos reservados -->
   <footer class="bg-dark text-white">
     <div class="container">
       <p class="mb-0">&copy; 2025 Guía del Estudiante - Todos los derechos reservados</p>
